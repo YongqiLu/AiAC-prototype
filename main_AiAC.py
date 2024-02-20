@@ -4,7 +4,7 @@ import time
 import sys
 
 # Load YOLO model
-model = YOLO("C:/1206_aac_train/dataset/runs/detect/train5/weights/best.pt")
+model = YOLO("best.pt")
 
 results = model.predict(source="0", stream=True, show = True)
 arduino = serial.Serial('COM3', 9600)
